@@ -229,7 +229,7 @@ footer#footer {
 
 #footer>div#footerLogo {
     height: 100px;
-    line-height: 100;
+    line-height: 100px;
 }
 
 #footer>div#companyInfo {
