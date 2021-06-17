@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/* Reset 시작*/
+* {
+    color: #222;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box; /* 에밋:bx탭 */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+a:link {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #444;
+}
+
+a:active {
+    color: #444;
+}
+
+img {
+    vertical-align: middle; /*옆에 붙는 텍스트를 중앙배치*/
+}
+
+ul {
+    list-style: none; /*불릿기호 사용x*/
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;    /* 에밋코드:df */
+}
+/*Reset 끝 */
+
+/*가이드 라인*/
+/*div#wrap {border: 1px solid #000;}*/
+/*div#headerFrame {border: 1px solid #08f;}*/
+/*header#header {border: 1px solid #f80;}*/
+/*div#slide {border: 1px solid #000;}*/
+/*div#contents {border: 1px solid #000;}*/
+/*footer#footer {border: 1px solid #000;}*/
+/*가이드라인*/
+
+/*div#wrap*/
+div#wrap {
+    width: 1200px;
+    /*border: 1px solid #f00;*/
+    margin: 0 auto; /*외부 가운데 정렬*/
+}
+/*div#wrap*/
+
+
+/*header#header*/
+div#headerFrame {
+    background-color: #0076be;
+}
+
+header#header {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+div#headerLogo {
+    height: 100px;
+    line-height: 100px;  /*h랑 세로 가운데 정렬*/
+}
+
+nav#gnb {
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+
+#gnb ul#mainMenu {
+    height: 100px;
+    padding-right: 20px;
+    /*border: 1px solid #000;*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#gnb a {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    /*border: 1px solid #f00;*/
+    display: inline-block;
+
+    background-color: #b3d6ec;
+}
+
+
+/*header#header*/
+
+
+
+/*div#slide*/
+div#slide {
+    position: relative;
+}
+div#slide span {
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26px;
+    padding: 20px;
+   /* border: 1px solid #000;*/
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    display: inline-block;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*div#slide*/
+
+
+
+
+/*div#contents*/
+div#contents {
+    height: 200px;
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#contents>* {
+    width: 400px;
+    /*border: 1px solid #000;*/
+}
+
+div#bbs {
+    padding: 10px;
+}
+
+#bbs>* {
+    border: 1px solid #aaa;
+}
+
+#bbs>button.tabBtn {
+    font-size: 18px;
+    padding: 2px 8px;
+    position: relative;
+    top: 1px;
+}
+
+#bbs>button:first-child {
+    border-bottom-color: #eee;
+    margin-left: 20px;
+    left: 6px;
+}
+
+#bbs>button:nth-child(2) {
+    border-color: #eee;
+    border-bottom-color: #aaa;
+}
+
+#bbs>div {
+    padding: 10px;
+}
+
+#bbs>div>table td {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+#bbs>div>table td:first-child {
+    padding-right: 36px;
+}
+
+#contents>div:not(:first-child) {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+#contents img {
+    width: 180px;
+
+}
+/*div#contents*/
+
+
+
+/*footer#footer*/
+div#footerFrame {
+    background-color: #0076be;
+}
+
+footer#footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#footer>div#footerLogo {
+    height: 100px;
+    line-height: 100;
+}
+
+#footer>div#companyInfo {
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#companyInfo>* {
+    height: 50px;
+    /*border: 1px solid #000;*/
+}
+
+#companyInfo ul#footerMainmenu {
+    height: 50px;
+    /*border: 1px solid #0f0;*/
+    justify-content: center;
+    align-items: center;
+}
+
+#companyInfo li.footerMainLi {
+    padding: 0 30px;
+    /*border: 1px solid #000;*/
+}
+
+
+#companyInfo div#copyright {
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+/*footer#footer*/
+
